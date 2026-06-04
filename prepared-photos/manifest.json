@@ -1,0 +1,2815 @@
+{
+  "generatedAt": "2026-06-04T00:51:38.740Z",
+  "cropCount": 170,
+  "entries": [
+    {
+      "slug": "bartender-pouring-don-julio",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.49.04 PM.png",
+      "sourceWidth": 1844,
+      "sourceHeight": 1224,
+      "tags": [
+        "bartender",
+        "pouring",
+        "bar",
+        "drink",
+        "warm",
+        "portrait"
+      ],
+      "bestFor": "human bar-service hero, staff card, drink-service proof of life",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/bartender-pouring-don-julio-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 99,
+            "w": 1844,
+            "h": 922
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/bartender-pouring-don-julio-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 331,
+            "y": 0,
+            "w": 918,
+            "h": 1224
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/bartender-pouring-don-julio-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 1632,
+            "h": 1224
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/bartender-pouring-don-julio-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 178,
+            "y": 0,
+            "w": 1224,
+            "h": 1224
+          }
+        }
+      ]
+    },
+    {
+      "slug": "lineup-instructor-with-two-patrons",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.49.55 PM.png",
+      "sourceWidth": 912,
+      "sourceHeight": 1214,
+      "tags": [
+        "line dancing",
+        "instructor",
+        "patrons",
+        "smiling",
+        "boots"
+      ],
+      "bestFor": "line dancing card, community proof, recurring Wednesday programming",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/lineup-instructor-with-two-patrons-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 202,
+            "w": 912,
+            "h": 456
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/lineup-instructor-with-two-patrons-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 1,
+            "y": 0,
+            "w": 911,
+            "h": 1214
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/lineup-instructor-with-two-patrons-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 88,
+            "w": 912,
+            "h": 684
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/lineup-instructor-with-two-patrons-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 912,
+            "h": 912
+          }
+        }
+      ]
+    },
+    {
+      "slug": "crowded-dance-floor-green-light",
+      "category": "events/line-dancing",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.50.15 PM.png",
+      "sourceWidth": 957,
+      "sourceHeight": 721,
+      "tags": [
+        "line dancing",
+        "crowd",
+        "nightlife",
+        "green light",
+        "busy"
+      ],
+      "bestFor": "high-energy hero, proof the room gets active, event card background",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/line-dancing/crowded-dance-floor-green-light-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 171,
+            "w": 957,
+            "h": 479
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/line-dancing/crowded-dance-floor-green-light-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 250,
+            "y": 0,
+            "w": 541,
+            "h": 721
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/line-dancing/crowded-dance-floor-green-light-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 3,
+            "w": 957,
+            "h": 718
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/line-dancing/crowded-dance-floor-green-light-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 160,
+            "y": 0,
+            "w": 721,
+            "h": 721
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tommy-and-theo-poster-wall",
+      "category": "people",
+      "type": "photo",
+      "source": "tommy-theo-600x450.png",
+      "sourceWidth": 600,
+      "sourceHeight": 450,
+      "tags": [
+        "celebrity",
+        "poster wall",
+        "local proof",
+        "people"
+      ],
+      "bestFor": "proof-of-life card, personality/history card, social credibility",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/tommy-and-theo-poster-wall-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 60,
+            "w": 600,
+            "h": 300
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/tommy-and-theo-poster-wall-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 131,
+            "y": 0,
+            "w": 338,
+            "h": 450
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/tommy-and-theo-poster-wall-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 600,
+            "h": 450
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/tommy-and-theo-poster-wall-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 75,
+            "y": 0,
+            "w": 450,
+            "h": 450
+          }
+        }
+      ]
+    },
+    {
+      "slug": "uaw-jeep-family-group",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.51.34 PM.png",
+      "sourceWidth": 697,
+      "sourceHeight": 649,
+      "tags": [
+        "group",
+        "community",
+        "uaw",
+        "patrons",
+        "poster wall"
+      ],
+      "bestFor": "community proof card, regulars/local family concept",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/uaw-jeep-family-group-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 5,
+            "y": 179,
+            "w": 683,
+            "h": 342
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/uaw-jeep-family-group-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 159,
+            "y": 92,
+            "w": 383,
+            "h": 510
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/uaw-jeep-family-group-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 8,
+            "y": 92,
+            "w": 680,
+            "h": 510
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/uaw-jeep-family-group-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 95,
+            "y": 92,
+            "w": 510,
+            "h": 510
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pizza-wings-on-bar",
+      "category": "food-drink",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.52.49 PM.png",
+      "sourceWidth": 2032,
+      "sourceHeight": 934,
+      "tags": [
+        "pizza",
+        "wings",
+        "food",
+        "bar top",
+        "game day"
+      ],
+      "bestFor": "food special card, game-day campaign, bar menu proof",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/food-drink/pizza-wings-on-bar-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 86,
+            "y": 0,
+            "w": 1868,
+            "h": 934
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/food-drink/pizza-wings-on-bar-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 670,
+            "y": 0,
+            "w": 701,
+            "h": 934
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/food-drink/pizza-wings-on-bar-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 398,
+            "y": 0,
+            "w": 1245,
+            "h": 934
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/food-drink/pizza-wings-on-bar-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 553,
+            "y": 0,
+            "w": 934,
+            "h": 934
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ticket-winner-with-dj-lights",
+      "category": "people/ticket-winners",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.53.07 PM.png",
+      "sourceWidth": 1630,
+      "sourceHeight": 1220,
+      "tags": [
+        "ticket giveaway",
+        "winner",
+        "dj lights",
+        "line dancing"
+      ],
+      "bestFor": "ticket giveaway hero, prize proof, campaign card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-with-dj-lights-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 148,
+            "w": 1630,
+            "h": 815
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-with-dj-lights-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 413,
+            "y": 0,
+            "w": 915,
+            "h": 1220
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-with-dj-lights-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 3,
+            "y": 0,
+            "w": 1627,
+            "h": 1220
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-with-dj-lights-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 260,
+            "y": 0,
+            "w": 1220,
+            "h": 1220
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ticket-winner-holding-tickets",
+      "category": "people/ticket-winners",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.53.25 PM.png",
+      "sourceWidth": 1627,
+      "sourceHeight": 1217,
+      "tags": [
+        "ticket giveaway",
+        "winner",
+        "tickets",
+        "dj lights"
+      ],
+      "bestFor": "giveaway hero/card, Huntington Center partnership proof",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-holding-tickets-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 163,
+            "w": 1627,
+            "h": 814
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-holding-tickets-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 404,
+            "y": 0,
+            "w": 913,
+            "h": 1217
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-holding-tickets-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 4,
+            "y": 0,
+            "w": 1623,
+            "h": 1217
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/ticket-winners/ticket-winner-holding-tickets-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 252,
+            "y": 0,
+            "w": 1217,
+            "h": 1217
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pizza-beer-local-libations-menu",
+      "category": "food-drink",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.53.41 PM.png",
+      "sourceWidth": 1632,
+      "sourceHeight": 1223,
+      "tags": [
+        "pizza",
+        "beer",
+        "local libations",
+        "menu",
+        "bar top"
+      ],
+      "bestFor": "local flavor hero, food and drinks card, Toledo Spirits mention",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/food-drink/pizza-beer-local-libations-menu-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 202,
+            "w": 1632,
+            "h": 816
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/food-drink/pizza-beer-local-libations-menu-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 402,
+            "y": 0,
+            "w": 917,
+            "h": 1223
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/food-drink/pizza-beer-local-libations-menu-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 1,
+            "y": 0,
+            "w": 1631,
+            "h": 1223
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/food-drink/pizza-beer-local-libations-menu-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 249,
+            "y": 0,
+            "w": 1223,
+            "h": 1223
+          }
+        }
+      ]
+    },
+    {
+      "slug": "three-person-ticket-winner-group",
+      "category": "people/ticket-winners",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.54.02 PM.png",
+      "sourceWidth": 730,
+      "sourceHeight": 996,
+      "tags": [
+        "ticket giveaway",
+        "winner",
+        "line dancing",
+        "smiling"
+      ],
+      "bestFor": "community proof, prize-winner carousel, social proof card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/ticket-winners/three-person-ticket-winner-group-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 273,
+            "w": 730,
+            "h": 365
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/ticket-winners/three-person-ticket-winner-group-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 730,
+            "h": 973
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/ticket-winners/three-person-ticket-winner-group-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 181,
+            "w": 730,
+            "h": 548
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/ticket-winners/three-person-ticket-winner-group-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 90,
+            "w": 730,
+            "h": 730
+          }
+        }
+      ]
+    },
+    {
+      "slug": "line-dancing-room-from-back",
+      "category": "events/line-dancing",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.54.36 PM.png",
+      "sourceWidth": 1629,
+      "sourceHeight": 1225,
+      "tags": [
+        "line dancing",
+        "crowd",
+        "room",
+        "movement"
+      ],
+      "bestFor": "line dancing hero, room-at-capacity proof, recurring event card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/line-dancing/line-dancing-room-from-back-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 243,
+            "w": 1629,
+            "h": 815
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/line-dancing/line-dancing-room-from-back-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 441,
+            "y": 0,
+            "w": 919,
+            "h": 1225
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/line-dancing/line-dancing-room-from-back-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 3,
+            "w": 1629,
+            "h": 1222
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/line-dancing/line-dancing-room-from-back-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 288,
+            "y": 0,
+            "w": 1225,
+            "h": 1225
+          }
+        }
+      ]
+    },
+    {
+      "slug": "long-drink-walleye-promo-team",
+      "category": "events/sports",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.56.48 PM.png",
+      "sourceWidth": 1378,
+      "sourceHeight": 1216,
+      "tags": [
+        "walleye",
+        "sports",
+        "promo team",
+        "downtown events"
+      ],
+      "bestFor": "arena/event partnership card, game-day tie-in, local sponsor proof",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/sports/long-drink-walleye-promo-team-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 191,
+            "w": 1378,
+            "h": 689
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/sports/long-drink-walleye-promo-team-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 304,
+            "y": 0,
+            "w": 912,
+            "h": 1216
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/sports/long-drink-walleye-promo-team-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 18,
+            "w": 1378,
+            "h": 1034
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/sports/long-drink-walleye-promo-team-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 152,
+            "y": 0,
+            "w": 1216,
+            "h": 1216
+          }
+        }
+      ]
+    },
+    {
+      "slug": "line-dancing-silhouette-light-rays",
+      "category": "events/line-dancing",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.57.48 PM.png",
+      "sourceWidth": 1902,
+      "sourceHeight": 974,
+      "tags": [
+        "line dancing",
+        "silhouette",
+        "light rays",
+        "atmosphere"
+      ],
+      "bestFor": "moody hero background, atmosphere section, motion without identifiable faces",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/line-dancing/line-dancing-silhouette-light-rays-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 23,
+            "w": 1902,
+            "h": 951
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/line-dancing/line-dancing-silhouette-light-rays-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 595,
+            "y": 0,
+            "w": 731,
+            "h": 974
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/line-dancing/line-dancing-silhouette-light-rays-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 311,
+            "y": 0,
+            "w": 1299,
+            "h": 974
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/line-dancing/line-dancing-silhouette-light-rays-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 473,
+            "y": 0,
+            "w": 974,
+            "h": 974
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cowgirl-group-outside-505",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.58.08 PM.png",
+      "sourceWidth": 1070,
+      "sourceHeight": 1145,
+      "tags": [
+        "group",
+        "line dancing",
+        "boots",
+        "outside",
+        "505"
+      ],
+      "bestFor": "community proof card, line dancing social proof, mobile hero",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/cowgirl-group-outside-505-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 253,
+            "w": 1070,
+            "h": 535
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/cowgirl-group-outside-505-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 101,
+            "y": 0,
+            "w": 859,
+            "h": 1145
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/cowgirl-group-outside-505-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 119,
+            "w": 1070,
+            "h": 803
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/cowgirl-group-outside-505-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 1070,
+            "h": 1070
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bar-drinks-with-ducks",
+      "category": "food-drink",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.58.58 PM.png",
+      "sourceWidth": 1626,
+      "sourceHeight": 1212,
+      "tags": [
+        "drinks",
+        "beer",
+        "shots",
+        "bar",
+        "playful"
+      ],
+      "bestFor": "drink card, bar personality, lighthearted proof-of-life",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/food-drink/bar-drinks-with-ducks-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 154,
+            "w": 1626,
+            "h": 813
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/food-drink/bar-drinks-with-ducks-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 366,
+            "y": 0,
+            "w": 909,
+            "h": 1212
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/food-drink/bar-drinks-with-ducks-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 10,
+            "y": 0,
+            "w": 1616,
+            "h": 1212
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/food-drink/bar-drinks-with-ducks-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 214,
+            "y": 0,
+            "w": 1212,
+            "h": 1212
+          }
+        }
+      ]
+    },
+    {
+      "slug": "st-patricks-drinks-on-bar",
+      "category": "food-drink",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.59.17 PM.png",
+      "sourceWidth": 1624,
+      "sourceHeight": 1218,
+      "tags": [
+        "drinks",
+        "st patricks",
+        "holiday",
+        "bar top"
+      ],
+      "bestFor": "holiday campaign card, seasonal drink visual, St. Patrick's concept",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/food-drink/st-patricks-drinks-on-bar-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 204,
+            "w": 1624,
+            "h": 812
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/food-drink/st-patricks-drinks-on-bar-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 338,
+            "y": 0,
+            "w": 914,
+            "h": 1218
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/food-drink/st-patricks-drinks-on-bar-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 1624,
+            "h": 1218
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/food-drink/st-patricks-drinks-on-bar-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 186,
+            "y": 0,
+            "w": 1218,
+            "h": 1218
+          }
+        }
+      ]
+    },
+    {
+      "slug": "friends-taking-shots-at-bar",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.01.32 PM.png",
+      "sourceWidth": 1626,
+      "sourceHeight": 1213,
+      "tags": [
+        "friends",
+        "shots",
+        "bar",
+        "downtown",
+        "social"
+      ],
+      "bestFor": "social proof card, nightlife moment, party campaign background",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/friends-taking-shots-at-bar-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 214,
+            "w": 1626,
+            "h": 813
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/friends-taking-shots-at-bar-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 695,
+            "y": 0,
+            "w": 910,
+            "h": 1213
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/friends-taking-shots-at-bar-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 9,
+            "y": 0,
+            "w": 1617,
+            "h": 1213
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/friends-taking-shots-at-bar-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 413,
+            "y": 0,
+            "w": 1213,
+            "h": 1213
+          }
+        }
+      ]
+    },
+    {
+      "slug": "busy-bar-daylight-counter",
+      "category": "atmosphere",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.02.01 PM.png",
+      "sourceWidth": 1623,
+      "sourceHeight": 1206,
+      "tags": [
+        "busy bar",
+        "daylight",
+        "crowd",
+        "counter",
+        "windows"
+      ],
+      "bestFor": "proof-of-life hero, crowd atmosphere, daytime event card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/atmosphere/busy-bar-daylight-counter-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 244,
+            "w": 1623,
+            "h": 812
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/atmosphere/busy-bar-daylight-counter-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 498,
+            "y": 0,
+            "w": 905,
+            "h": 1206
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/atmosphere/busy-bar-daylight-counter-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 15,
+            "y": 0,
+            "w": 1608,
+            "h": 1206
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/atmosphere/busy-bar-daylight-counter-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 347,
+            "y": 0,
+            "w": 1206,
+            "h": 1206
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bartender-smiling-behind-bar",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.02.50 PM.png",
+      "sourceWidth": 554,
+      "sourceHeight": 1207,
+      "tags": [
+        "bartender",
+        "behind bar",
+        "drink",
+        "portrait"
+      ],
+      "bestFor": "staff card, friendly service proof, mobile-first hero",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/bartender-smiling-behind-bar-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 387,
+            "w": 554,
+            "h": 277
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/bartender-smiling-behind-bar-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 156,
+            "w": 554,
+            "h": 739
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/bartender-smiling-behind-bar-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 317,
+            "w": 554,
+            "h": 416
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/bartender-smiling-behind-bar-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 248,
+            "w": 554,
+            "h": 554
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bar-crowd-warm-lights",
+      "category": "atmosphere",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.04.09 PM.png",
+      "sourceWidth": 1832,
+      "sourceHeight": 1203,
+      "tags": [
+        "bar crowd",
+        "warm lights",
+        "poster wall",
+        "social"
+      ],
+      "bestFor": "proof-of-life hero, busy but relaxed atmosphere, section background",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/atmosphere/bar-crowd-warm-lights-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 202,
+            "w": 1832,
+            "h": 916
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/atmosphere/bar-crowd-warm-lights-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 479,
+            "y": 0,
+            "w": 902,
+            "h": 1203
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/atmosphere/bar-crowd-warm-lights-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 128,
+            "y": 0,
+            "w": 1604,
+            "h": 1203
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/atmosphere/bar-crowd-warm-lights-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 329,
+            "y": 0,
+            "w": 1203,
+            "h": 1203
+          }
+        }
+      ]
+    },
+    {
+      "slug": "music-kiosk-photobooth-screen",
+      "category": "venue",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.04.24 PM.png",
+      "sourceWidth": 637,
+      "sourceHeight": 946,
+      "tags": [
+        "music kiosk",
+        "photobooth",
+        "venue feature",
+        "glow"
+      ],
+      "bestFor": "game room/feature card, entertainment feature visual",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/venue/music-kiosk-photobooth-screen-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 326,
+            "w": 637,
+            "h": 319
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/venue/music-kiosk-photobooth-screen-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 61,
+            "w": 637,
+            "h": 849
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/venue/music-kiosk-photobooth-screen-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 246,
+            "w": 637,
+            "h": 478
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/venue/music-kiosk-photobooth-screen-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 167,
+            "w": 637,
+            "h": 637
+          }
+        }
+      ]
+    },
+    {
+      "slug": "two-women-bar-dance-moment",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.04.42 PM.png",
+      "sourceWidth": 805,
+      "sourceHeight": 1210,
+      "tags": [
+        "women",
+        "bar",
+        "dancing",
+        "smiling",
+        "nightlife"
+      ],
+      "bestFor": "ladies night card, social proof, nightlife atmosphere",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/two-women-bar-dance-moment-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 419,
+            "w": 805,
+            "h": 403
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/two-women-bar-dance-moment-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 84,
+            "w": 805,
+            "h": 1073
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/two-women-bar-dance-moment-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 318,
+            "w": 805,
+            "h": 604
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/two-women-bar-dance-moment-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 218,
+            "w": 805,
+            "h": 805
+          }
+        }
+      ]
+    },
+    {
+      "slug": "bartender-pouring-black-and-white",
+      "category": "people",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.05.16 PM.png",
+      "sourceWidth": 800,
+      "sourceHeight": 1205,
+      "tags": [
+        "bartender",
+        "pouring",
+        "black and white",
+        "service"
+      ],
+      "bestFor": "stylish service card, moody hero slice, bartender profile",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/bartender-pouring-black-and-white-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 270,
+            "w": 800,
+            "h": 400
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/bartender-pouring-black-and-white-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 800,
+            "h": 1067
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/bartender-pouring-black-and-white-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 170,
+            "w": 800,
+            "h": 600
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/bartender-pouring-black-and-white-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 70,
+            "w": 800,
+            "h": 800
+          }
+        }
+      ]
+    },
+    {
+      "slug": "country-record-wall",
+      "category": "venue",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.05.53 PM.png",
+      "sourceWidth": 1829,
+      "sourceHeight": 1215,
+      "tags": [
+        "record wall",
+        "country",
+        "interior",
+        "identity"
+      ],
+      "bestFor": "brand identity card, country-roads visual, background texture",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/venue/country-record-wall-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 203,
+            "w": 1829,
+            "h": 915
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/venue/country-record-wall-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 555,
+            "y": 0,
+            "w": 911,
+            "h": 1215
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/venue/country-record-wall-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 200,
+            "y": 0,
+            "w": 1620,
+            "h": 1215
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/venue/country-record-wall-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 403,
+            "y": 0,
+            "w": 1215,
+            "h": 1215
+          }
+        }
+      ]
+    },
+    {
+      "slug": "exterior-corner-night",
+      "category": "venue",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.06.14 PM.png",
+      "sourceWidth": 1616,
+      "sourceHeight": 1213,
+      "tags": [
+        "exterior",
+        "downtown",
+        "night",
+        "building"
+      ],
+      "bestFor": "location card, directions block, venue exterior hero",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/venue/exterior-corner-night-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 246,
+            "w": 1616,
+            "h": 808
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/venue/exterior-corner-night-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 395,
+            "y": 0,
+            "w": 910,
+            "h": 1213
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/venue/exterior-corner-night-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 1,
+            "w": 1616,
+            "h": 1212
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/venue/exterior-corner-night-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 244,
+            "y": 0,
+            "w": 1213,
+            "h": 1213
+          }
+        }
+      ]
+    },
+    {
+      "slug": "empty-bar-wide-stools",
+      "category": "venue",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.06.29 PM.png",
+      "sourceWidth": 1629,
+      "sourceHeight": 1210,
+      "tags": [
+        "empty bar",
+        "interior",
+        "stools",
+        "warm lights"
+      ],
+      "bestFor": "venue overview, section background, quiet opening-hours visual",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/venue/empty-bar-wide-stools-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 163,
+            "w": 1629,
+            "h": 815
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/venue/empty-bar-wide-stools-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 446,
+            "y": 0,
+            "w": 908,
+            "h": 1210
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/venue/empty-bar-wide-stools-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 16,
+            "y": 0,
+            "w": 1613,
+            "h": 1210
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/venue/empty-bar-wide-stools-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 295,
+            "y": 0,
+            "w": 1210,
+            "h": 1210
+          }
+        }
+      ]
+    },
+    {
+      "slug": "tshirt-ticket-winner-with-owner",
+      "category": "people/ticket-winners",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 8.07.08 PM.png",
+      "sourceWidth": 914,
+      "sourceHeight": 1220,
+      "tags": [
+        "ticket winner",
+        "t-shirt",
+        "owner",
+        "giveaway"
+      ],
+      "bestFor": "giveaway proof, merch giveaway, prize campaign card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/people/ticket-winners/tshirt-ticket-winner-with-owner-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 292,
+            "w": 914,
+            "h": 457
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/people/ticket-winners/tshirt-ticket-winner-with-owner-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 914,
+            "h": 1219
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/people/ticket-winners/tshirt-ticket-winner-with-owner-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 177,
+            "w": 914,
+            "h": 686
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/people/ticket-winners/tshirt-ticket-winner-with-owner-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 63,
+            "w": 914,
+            "h": 914
+          }
+        }
+      ]
+    },
+    {
+      "slug": "puck-bowling-machine",
+      "category": "game-room",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.16.28 PM.png",
+      "sourceWidth": 689,
+      "sourceHeight": 1042,
+      "tags": [
+        "game room",
+        "puck bowling",
+        "arcade"
+      ],
+      "bestFor": "game room feature card, entertainment list visual",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/game-room/puck-bowling-machine-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 375,
+            "w": 344,
+            "h": 172
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/game-room/puck-bowling-machine-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 43,
+            "y": 289,
+            "w": 258,
+            "h": 344
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/game-room/puck-bowling-machine-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 332,
+            "w": 344,
+            "h": 258
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/game-room/puck-bowling-machine-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 289,
+            "w": 344,
+            "h": 344
+          }
+        }
+      ]
+    },
+    {
+      "slug": "pinball-machine",
+      "category": "game-room",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.16.28 PM.png",
+      "sourceWidth": 689,
+      "sourceHeight": 1042,
+      "tags": [
+        "game room",
+        "pinball",
+        "arcade"
+      ],
+      "bestFor": "game room card, activity visual",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/game-room/pinball-machine-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 344,
+            "y": 375,
+            "w": 345,
+            "h": 173
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/game-room/pinball-machine-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 387,
+            "y": 289,
+            "w": 258,
+            "h": 344
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/game-room/pinball-machine-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 344,
+            "y": 332,
+            "w": 345,
+            "h": 259
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/game-room/pinball-machine-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 344,
+            "y": 289,
+            "w": 344,
+            "h": 344
+          }
+        }
+      ]
+    },
+    {
+      "slug": "darts-and-arcade-machines",
+      "category": "game-room",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.16.28 PM.png",
+      "sourceWidth": 689,
+      "sourceHeight": 1042,
+      "tags": [
+        "game room",
+        "darts",
+        "machines"
+      ],
+      "bestFor": "game room card, darts/league context",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/game-room/darts-and-arcade-machines-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 229,
+            "y": 686,
+            "w": 230,
+            "h": 115
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/game-room/darts-and-arcade-machines-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 262,
+            "y": 633,
+            "w": 165,
+            "h": 220
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/game-room/darts-and-arcade-machines-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 229,
+            "y": 657,
+            "w": 230,
+            "h": 173
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/game-room/darts-and-arcade-machines-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 234,
+            "y": 633,
+            "w": 220,
+            "h": 220
+          }
+        }
+      ]
+    },
+    {
+      "slug": "mechanical-bull-in-event-space",
+      "category": "events/opening-day",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.15.24 PM.png",
+      "sourceWidth": 692,
+      "sourceHeight": 710,
+      "tags": [
+        "mechanical bull",
+        "opening day",
+        "event space"
+      ],
+      "bestFor": "Opening Day campaign, mechanical bull feature, event-center card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/opening-day/mechanical-bull-in-event-space-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 2,
+            "y": 105,
+            "w": 680,
+            "h": 340
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/opening-day/mechanical-bull-in-event-space-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 201,
+            "y": 95,
+            "w": 289,
+            "h": 385
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/opening-day/mechanical-bull-in-event-space-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 89,
+            "y": 95,
+            "w": 513,
+            "h": 385
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/opening-day/mechanical-bull-in-event-space-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 153,
+            "y": 95,
+            "w": 385,
+            "h": 385
+          }
+        }
+      ]
+    },
+    {
+      "slug": "free-taco-bar-table",
+      "category": "food-drink",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.14.52 PM.png",
+      "sourceWidth": 683,
+      "sourceHeight": 732,
+      "tags": [
+        "taco bar",
+        "free food bar",
+        "game day"
+      ],
+      "bestFor": "food-bar campaign proof, game-day card, event perk visual",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/food-drink/free-taco-bar-table-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 2,
+            "y": 170,
+            "w": 679,
+            "h": 340
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/food-drink/free-taco-bar-table-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 197,
+            "y": 156,
+            "w": 287,
+            "h": 383
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/food-drink/free-taco-bar-table-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 85,
+            "y": 156,
+            "w": 511,
+            "h": 383
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/food-drink/free-taco-bar-table-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 149,
+            "y": 156,
+            "w": 383,
+            "h": 383
+          }
+        }
+      ]
+    },
+    {
+      "slug": "private-line-dance-group-with-banner",
+      "category": "events/private-events",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.19.35 PM.png",
+      "sourceWidth": 691,
+      "sourceHeight": 922,
+      "tags": [
+        "private event",
+        "line dancing",
+        "group",
+        "event center"
+      ],
+      "bestFor": "private event proof, group booking card, line-dance class card",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/private-events/private-line-dance-group-with-banner-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 15,
+            "y": 149,
+            "w": 326,
+            "h": 163
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/private-events/private-line-dance-group-with-banner-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 57,
+            "y": 67,
+            "w": 242,
+            "h": 323
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/private-events/private-line-dance-group-with-banner-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 15,
+            "y": 108,
+            "w": 326,
+            "h": 245
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/private-events/private-line-dance-group-with-banner-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 17,
+            "y": 67,
+            "w": 323,
+            "h": 323
+          }
+        }
+      ]
+    },
+    {
+      "slug": "private-line-dance-class-room",
+      "category": "events/private-events",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.19.35 PM.png",
+      "sourceWidth": 691,
+      "sourceHeight": 922,
+      "tags": [
+        "private event",
+        "line dancing",
+        "event center",
+        "class"
+      ],
+      "bestFor": "event-center proof, class/activity card, private bookings",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/events/private-events/private-line-dance-class-room-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 343,
+            "y": 98,
+            "w": 326,
+            "h": 163
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/events/private-events/private-line-dance-class-room-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 422,
+            "y": 67,
+            "w": 168,
+            "h": 224
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/events/private-events/private-line-dance-class-room-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 357,
+            "y": 67,
+            "w": 299,
+            "h": 224
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/events/private-events/private-line-dance-class-room-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 394,
+            "y": 67,
+            "w": 224,
+            "h": 224
+          }
+        }
+      ]
+    },
+    {
+      "slug": "local-libations-menu-closeup",
+      "category": "food-drink",
+      "type": "photo",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.54.22 PM.png",
+      "sourceWidth": 743,
+      "sourceHeight": 992,
+      "tags": [
+        "local libations",
+        "Toledo Spirits",
+        "menu",
+        "drinks"
+      ],
+      "bestFor": "local drink menu card, Toledo Spirits proof, cocktail section",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/food-drink/local-libations-menu-closeup-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 269,
+            "w": 743,
+            "h": 372
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/food-drink/local-libations-menu-closeup-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 0,
+            "y": 0,
+            "w": 743,
+            "h": 991
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/food-drink/local-libations-menu-closeup-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 177,
+            "w": 743,
+            "h": 557
+          }
+        },
+        {
+          "variant": "square",
+          "path": "prepared-photos/food-drink/local-libations-menu-closeup-square-900x900.png",
+          "width": 900,
+          "height": 900,
+          "crop": {
+            "x": 0,
+            "y": 84,
+            "w": 743,
+            "h": 743
+          }
+        }
+      ]
+    },
+    {
+      "slug": "line-dancing-wednesday-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.11.50 PM.png",
+      "sourceWidth": 978,
+      "sourceHeight": 1226,
+      "tags": [
+        "graphic",
+        "line dancing",
+        "Wednesday",
+        "flyer"
+      ],
+      "bestFor": "reference graphic for line-dancing card; do not use as only source if photo exists",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/line-dancing-wednesday-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 371,
+            "w": 978,
+            "h": 489
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/line-dancing-wednesday-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 29,
+            "y": 0,
+            "w": 920,
+            "h": 1226
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/line-dancing-wednesday-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 248,
+            "w": 978,
+            "h": 734
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dj-night-friday-saturday-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.11.10 PM.png",
+      "sourceWidth": 987,
+      "sourceHeight": 1228,
+      "tags": [
+        "graphic",
+        "DJ night",
+        "Friday",
+        "Saturday"
+      ],
+      "bestFor": "DJ-night source graphic or background texture",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/dj-night-friday-saturday-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 368,
+            "w": 987,
+            "h": 494
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/dj-night-friday-saturday-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 34,
+            "y": 0,
+            "w": 921,
+            "h": 1228
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/dj-night-friday-saturday-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 245,
+            "w": 987,
+            "h": 740
+          }
+        }
+      ]
+    },
+    {
+      "slug": "karaoke-night-tuesday-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.15.07 PM.png",
+      "sourceWidth": 687,
+      "sourceHeight": 703,
+      "tags": [
+        "graphic",
+        "karaoke",
+        "Tuesday"
+      ],
+      "bestFor": "karaoke card reference graphic",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/karaoke-night-tuesday-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 3,
+            "y": 206,
+            "w": 681,
+            "h": 341
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/karaoke-night-tuesday-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 128,
+            "y": 91,
+            "w": 428,
+            "h": 571
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/karaoke-night-tuesday-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 3,
+            "y": 121,
+            "w": 681,
+            "h": 511
+          }
+        }
+      ]
+    },
+    {
+      "slug": "ladies-night-thursday-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.18.25 PM.png",
+      "sourceWidth": 685,
+      "sourceHeight": 949,
+      "tags": [
+        "graphic",
+        "ladies night",
+        "Thursday"
+      ],
+      "bestFor": "Ladies Night source graphic; useful for offer cards",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/ladies-night-thursday-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 329,
+            "w": 685,
+            "h": 343
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/ladies-night-thursday-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 57,
+            "y": 93,
+            "w": 570,
+            "h": 760
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/ladies-night-thursday-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 243,
+            "w": 685,
+            "h": 514
+          }
+        }
+      ]
+    },
+    {
+      "slug": "service-industry-night-monday-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.57.30 PM.png",
+      "sourceWidth": 1572,
+      "sourceHeight": 1216,
+      "tags": [
+        "graphic",
+        "service industry night",
+        "Monday",
+        "offer"
+      ],
+      "bestFor": "service industry card reference or offer graphic",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/service-industry-night-monday-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 215,
+            "w": 1572,
+            "h": 786
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/service-industry-night-monday-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 330,
+            "y": 0,
+            "w": 912,
+            "h": 1216
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/service-industry-night-monday-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 19,
+            "w": 1572,
+            "h": 1179
+          }
+        }
+      ]
+    },
+    {
+      "slug": "dart-league-signup-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.42.03 PM.png",
+      "sourceWidth": 687,
+      "sourceHeight": 1051,
+      "tags": [
+        "graphic",
+        "dart league",
+        "signup"
+      ],
+      "bestFor": "league signup card, seasonal programming reference",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/dart-league-signup-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 374,
+            "w": 687,
+            "h": 344
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/dart-league-signup-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 5,
+            "y": 94,
+            "w": 678,
+            "h": 904
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/dart-league-signup-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 289,
+            "w": 687,
+            "h": 515
+          }
+        }
+      ]
+    },
+    {
+      "slug": "halloween-night-party-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.33.20 PM.png",
+      "sourceWidth": 685,
+      "sourceHeight": 1093,
+      "tags": [
+        "graphic",
+        "Halloween",
+        "DJ",
+        "costume contest"
+      ],
+      "bestFor": "holiday campaign visual source",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/halloween-night-party-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 3,
+            "y": 385,
+            "w": 682,
+            "h": 341
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/halloween-night-party-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 13,
+            "y": 114,
+            "w": 662,
+            "h": 882
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/halloween-night-party-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 3,
+            "y": 299,
+            "w": 682,
+            "h": 512
+          }
+        }
+      ]
+    },
+    {
+      "slug": "new-years-eve-line-dancing-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.25.53 PM.png",
+      "sourceWidth": 689,
+      "sourceHeight": 1087,
+      "tags": [
+        "graphic",
+        "New Years Eve",
+        "line dancing",
+        "DJ"
+      ],
+      "bestFor": "holiday campaign visual source",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/new-years-eve-line-dancing-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 378,
+            "w": 689,
+            "h": 345
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/new-years-eve-line-dancing-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 5,
+            "y": 95,
+            "w": 679,
+            "h": 905
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/new-years-eve-line-dancing-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 292,
+            "w": 689,
+            "h": 517
+          }
+        }
+      ]
+    },
+    {
+      "slug": "opening-day-mechanical-bull-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.15.40 PM.png",
+      "sourceWidth": 685,
+      "sourceHeight": 1093,
+      "tags": [
+        "graphic",
+        "Opening Day",
+        "mechanical bull",
+        "Mud Hens"
+      ],
+      "bestFor": "Opening Day campaign reference graphic",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/opening-day-mechanical-bull-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 3,
+            "y": 444,
+            "w": 680,
+            "h": 340
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/opening-day-mechanical-bull-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 15,
+            "y": 176,
+            "w": 656,
+            "h": 875
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/opening-day-mechanical-bull-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 3,
+            "y": 359,
+            "w": 680,
+            "h": 510
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fuel-up-for-big-game-flyer",
+      "category": "event-graphics",
+      "type": "graphic",
+      "source": "raw-facebook-export/Screenshot 2026-06-03 at 7.37.17 PM.png",
+      "sourceWidth": 686,
+      "sourceHeight": 1073,
+      "tags": [
+        "graphic",
+        "football",
+        "game day",
+        "specials"
+      ],
+      "bestFor": "game-day campaign source graphic",
+      "outputs": [
+        {
+          "variant": "desktop",
+          "path": "prepared-photos/event-graphics/fuel-up-for-big-game-flyer-desktop-1200x600.png",
+          "width": 1200,
+          "height": 600,
+          "crop": {
+            "x": 0,
+            "y": 362,
+            "w": 686,
+            "h": 343
+          }
+        },
+        {
+          "variant": "mobile",
+          "path": "prepared-photos/event-graphics/fuel-up-for-big-game-flyer-mobile-900x1200.png",
+          "width": 900,
+          "height": 1200,
+          "crop": {
+            "x": 14,
+            "y": 93,
+            "w": 659,
+            "h": 879
+          }
+        },
+        {
+          "variant": "card",
+          "path": "prepared-photos/event-graphics/fuel-up-for-big-game-flyer-card-600x450.png",
+          "width": 600,
+          "height": 450,
+          "crop": {
+            "x": 0,
+            "y": 276,
+            "w": 686,
+            "h": 515
+          }
+        }
+      ]
+    }
+  ]
+}
