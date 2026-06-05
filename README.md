@@ -1,26 +1,25 @@
 # Whiskey Red Saloon — deploy bundle
 
-Static site. No build step. Drop these into the repo root and connect Cloudflare Pages.
+Static site. No build step, no images, no dependencies beyond Google Fonts (CDN). Drop into the repo root and connect Cloudflare Pages.
 
 ## Structure
+
 ```
-index.html              → public site (whiskeyredsaloon.com)
-demo/index.html         → Tier Demo / sales tool (whiskeyredsaloon.com/demo/)
-prepared-photos/        → image library (referenced by index.html, relative paths)
+index.html              → Tier Demo / sales tool  (whiskeyredsaloon.com)
+site/index.html         → public landing page     (whiskeyredsaloon.com/site/)
 ```
-- Photo paths are relative (`prepared-photos/...`) and resolve from the root `index.html`.
-- The demo references no local images — safe to move/rename/gate independently.
-- Fonts load from Google Fonts CDN (Oswald, Caveat, Courier Prime). No local font files needed.
+
+- All photo slots are intentional on-page placeholders — there are no image files to ship.
+- Fonts load from Google Fonts (Oswald, Caveat, Courier Prime). Nothing else external.
+- The landing page at `/site` is self-contained and references no local assets.
 
 ## Cloudflare Pages settings
+
 - Framework preset: **None**
 - Build command: **(blank)**
 - Build output directory: **/** (root)
 
 ## Custom domain
-Pages project → Custom domains → add `whiskeyredsaloon.com` + `www`.
-DNS is already in Cloudflare, so records + SSL auto-provision.
 
-## Open decisions (make in Claude Code)
-- Whether `/demo/` should be public, moved to an unguessable path, or gated behind Cloudflare Access.
-- Optional: `404.html`, a `/tier-demo` → `/demo` redirect, self-hosting the fonts.
+Pages project → Custom domains → add `whiskeyredsaloon.com` + `www`.
+DNS already lives in Cloudflare, so records + SSL auto-provision.

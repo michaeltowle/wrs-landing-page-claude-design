@@ -24,11 +24,11 @@
   *{box-sizing:border-box;}
   html,body{margin:0;padding:0;}
   body{
-    background:var(--paper);
+    background:#0e0d0c;
     color:var(--ink);
     font-family:'Oswald',sans-serif;
     -webkit-font-smoothing:antialiased;
-    padding-top:0;
+    padding-top:96px;
   }
 
   /* ---------------- AGENCY DEMO BAR (the tool, not the site) ---------------- */
@@ -189,10 +189,22 @@
   .calwrap{display:grid;gap:11px;}
   .crow{display:grid;grid-template-columns:120px 1fr auto;gap:18px;align-items:center;background:var(--paper);border:2px solid var(--ink);border-radius:11px 7px 12px 7px;padding:14px 18px;}
   .crow .when{font-family:'Oswald';font-weight:700;font-size:15px;line-height:1;text-transform:uppercase;}
+  .crow .when .dow{display:block;font-size:10.5px;font-weight:500;font-style:normal;letter-spacing:.14em;line-height:1;color:var(--ink2-solid);margin-bottom:1px;}
   .crow .when span{display:block;font-family:'Courier Prime';font-weight:400;font-size:11px;color:var(--ink2-solid);margin-top:3px;letter-spacing:.03em;}
   .crow .what b{font-family:'Oswald';font-weight:600;font-size:17px;display:block;}
   .crow .what small{font-family:'Courier Prime';font-size:11.5px;color:#4a4439;}
   .crow .act{justify-self:end;}
+  /* RSVP is a Top-Shelf capture — clean locked box on the small action cell (text would be illegible) */
+  .crow .act.excluded::after{content:"";}
+  .crow .act.excluded::before{inset:2px;border-width:2px;}
+  .crow .act.excluded > .btn{opacity:.25 !important;filter:grayscale(.9);}
+
+  /* Jeep Fest "tie" — binds the two adjacent Jeep events into one build-up */
+  .calwrap .tie{position:relative;display:grid;gap:9px;border:2px solid var(--call);border-radius:13px 9px 13px 9px;padding:11px;background:rgba(178,125,39,.06);}
+  .calwrap .tie .crow{border-color:#cdbf9f;}
+  .tietab{position:absolute;top:-12px;left:16px;z-index:5;display:flex;align-items:center;white-space:nowrap;background:var(--call);color:#fff;font-family:'Oswald';font-weight:700;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:3px 10px;border-radius:5px;border:1.5px solid #000;box-shadow:2px 2px 0 #000;}
+  .tietab .grille{display:inline-flex;gap:2px;height:9px;margin-right:7px;}
+  .tietab .grille i{width:2px;height:100%;background:#fff;border-radius:1px;}
 
   /* ---------------- AMENITIES + GALLERY ---------------- */
   .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
@@ -205,14 +217,6 @@
   .gcell.wide{grid-column:span 2;}
   .gcell .ph{position:absolute;inset:0;}
   .gcap{position:absolute;left:8px;bottom:8px;z-index:3;background:var(--ink);color:var(--paper);font-family:'Courier Prime';font-size:10.5px;padding:3px 8px;border-radius:5px;max-width:88%;}
-
-  /* ---------------- REAL PHOTOS ---------------- */
-  .photoframe{position:relative;overflow:hidden;border:1.6px solid #b3ab98;border-radius:8px 5px 9px 6px;background:#cfc8b8;}
-  .photoframe img{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;}
-  .shot.photoframe{height:320px;}
-  .ticketph.photoframe{height:260px;}
-  .gphoto{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;}
-  .gcell .gcap{z-index:3;}
 
   /* ---------------- EMAIL SIGNUP ---------------- */
   #signup{background:var(--paper2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);scroll-margin-top:120px;}
@@ -326,6 +330,27 @@
 </head>
 <body>
 
+<!-- ============= AGENCY DEMO BAR ============= -->
+<div class="demobar">
+  <div class="row1">
+    <div class="brandtag">
+      <b>WHISKEY RED · LANDING PAGE</b>
+      <small>wireframe preview · service-tier demo</small>
+    </div>
+    <div class="switch" id="switch">
+      <button data-m="all" class="active"><span class="dot"></span>Map view</button>
+      <button data-m="well"><span class="dot"></span>Well</button>
+      <button data-m="call"><span class="dot"></span>Call</button>
+      <button data-m="top"><span class="dot"></span>Top Shelf</button>
+    </div>
+    <div class="lab">Well = Basic · Call = Plus · Top Shelf = Premium</div>
+  </div>
+  <div class="summary" id="summary">
+    <span class="ico">MAP</span>
+    <span>Every block is tagged by the tier that keeps it alive. Flip a tier to preview the <b>actual site that client gets</b> — watch shelf-life content switch off.</span>
+  </div>
+</div>
+
 <div class="page">
 
     <!-- ===== HEADER (evergreen) ===== -->
@@ -363,7 +388,7 @@
               <div class="meta"><span class="chip">Open till 2am daily</span><span class="chip">Happy Hour weekdays till 6pm</span></div>
               <button class="btn ghost">See What's On →</button>
             </div>
-            <div class="ph shot">[ HERO PHOTO — PLACEHOLDER ]<br>exterior + painted-window lettering<br>— evergreen, never changes —</div>
+            <div class="ph shot">[ HERO PHOTO ]<br>whiskey red saloon exterior</div>
           </div>
 
           <!-- Slide 2 — Jeep Fest (dated) -->
@@ -372,12 +397,12 @@
             <div>
               <div class="skick">Aug 6–9 · Toledo Jeep Fest</div>
               <h1>Jeep Fest<br>Weekend</h1>
-              <p class="sub">Toledo's biggest weekend. Doors at 9am — park the Jeep, pop the doors, pile in. Jeep owners get <b>25% off</b> drinks, pizza &amp; wings all four days.</p>
+              <p class="sub">Toledo's biggest weekend. Doors at 9am — park the Jeep, pop the doors, pile in. Jeep owners get <b>25% off</b> drinks all four days.</p>
               <div class="meta"><span class="chip">Doors 9am</span><span class="chip">Jeep owners 25% off</span><span class="chip">Live DJ</span></div>
               <button class="btn">Weekend Lineup →</button>
               <div class="note call" style="margin-top:14px">shelf life: gone after Aug 9 — needs a swap</div>
             </div>
-            <div class="ph shot">[ HERO PHOTO — PLACEHOLDER ]<br>no Jeep Fest photo in the set yet<br>— shoot needed (Call-tier deliverable) —</div>
+            <div class="ph shot">[ HERO PHOTO ]<br>Jeeps lined up out front,<br>packed patio in the sun</div>
           </div>
 
           <!-- Slide 3 — Brooks & Dunn giveaway (email/top) -->
@@ -386,12 +411,12 @@
             <div>
               <div class="skick">Sept 17 · Huntington Center</div>
               <h1>Win Brooks<br>&amp; Dunn Tickets</h1>
-              <p class="sub">Free to enter — get on the list and we'll draw a winner. Plus first dibs on every show next door.</p>
+              <p class="sub">Free to enter — get on the list, we draw a name, and somebody walks out with a pair of seats to the show next door. Might as well be you.</p>
               <div class="meta"><span class="chip">Free entry</span><span class="chip">Pair of tickets</span></div>
               <button class="btn red to-signup">Enter to Win →</button>
               <div class="note" style="margin-top:14px">giveaway = email captures = Top&nbsp;Shelf</div>
             </div>
-            <div class="shot photoframe"><img src="prepared-photos/people/ticket-winners/three-person-winner-CROP-v2.png" alt="Owner Jeff and the Lined Up host flank a Brooks & Dunn ticket winner" style="object-position:center top;"></div>
+            <div class="ph shot">[ HERO PHOTO ]<br>winner up front, pair of<br>tickets held high</div>
           </div>
 
           <!-- Slide 4 — Line Dancing (recurring/evergreen) -->
@@ -404,7 +429,7 @@
               <div class="meta"><span class="chip">7–11 PM</span><span class="chip">$5 cover</span><span class="chip">All levels</span><span class="chip">18+</span></div>
               <button class="btn ghost">How It Works →</button>
             </div>
-            <div class="ph shot">[ HERO PHOTO — PLACEHOLDER ]<br>full dance floor, boots,<br>"Lined Up" instructor up front</div>
+            <div class="ph shot">[ HERO PHOTO ]<br>full dance floor, boots,<br>"Lined Up" instructor up front</div>
           </div>
 
         </div>
@@ -436,21 +461,38 @@
 
         <div class="crow" data-tier="call">
           <span class="ttag t-call">Call</span>
-          <div class="when">SUN<br>Jun 14<span>this week</span></div>
-          <div class="what"><b>Mud Hens Afterparty</b><small>doors 7pm · $3 drafts · jerseys welcome</small></div>
-          <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">RSVP</button></div>
+          <div class="when"><i class="dow">SUN</i>Jun 14<span>this week</span></div>
+          <div class="what"><b>Mud Hens Afterparty</b><small>game 4pm · $3 domestics with your RSVP · complimentary chili dog bar</small></div>
+          <div class="act" data-tier="top"><span class="ttag t-top">Top</span><button class="btn red to-signup" style="font-size:12px;padding:8px 14px">RSVP</button></div>
+        </div>
+
+        <div class="tie">
+          <span class="tietab"><span class="grille"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>Jeep Fest Week</span>
+          <div class="crow" data-tier="call">
+            <span class="ttag t-call">Call</span>
+            <div class="when"><i class="dow">FRI</i>Jul 31<span>kickoff</span></div>
+            <div class="what"><b>UAW Local 12 Jeep Unit Night</b><small>the crew that builds the Jeep, off the clock — Local 12 kicks off Jeep Fest · RSVP to hold your spot</small></div>
+            <div class="act" data-tier="top"><span class="ttag t-top">Top</span><button class="btn red to-signup" style="font-size:12px;padding:8px 14px">RSVP</button></div>
+          </div>
+
+          <div class="crow" data-tier="call">
+            <span class="ttag t-call">Call</span>
+            <div class="when">AUG<br>6–9<span>Jeep Fest</span></div>
+            <div class="what"><b>Toledo Jeep Fest Weekend</b><small>the city's biggest weekend · doors 9am daily · Jeep owners 25% off drinks</small></div>
+            <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">Lineup</button></div>
+          </div>
         </div>
 
         <div class="crow" data-tier="call">
           <span class="ttag t-call">Call</span>
-          <div class="when">AUG<br>6–9<span>Jeep Fest</span></div>
-          <div class="what"><b>Toledo Jeep Fest Weekend</b><small>the city's biggest weekend · doors 9am daily · Jeep owners 25% off drinks, pizza &amp; wings</small></div>
-          <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">Lineup</button></div>
+          <div class="when"><i class="dow">THU</i>Aug 13<span>watch party</span></div>
+          <div class="what"><b>Packers @ Steelers</b><small>NFL preseason watch party · 7pm kickoff · $3 domestics with your RSVP</small></div>
+          <div class="act" data-tier="top"><span class="ttag t-top">Top</span><button class="btn red to-signup" style="font-size:12px;padding:8px 14px">RSVP</button></div>
         </div>
 
         <div class="crow" data-tier="top">
           <span class="ttag t-top">Top</span>
-          <div class="when">SEP<br>16<span>giveaway</span></div>
+          <div class="when"><i class="dow">SAT</i>Sep 12<span>giveaway</span></div>
           <div class="what"><b>Brooks &amp; Dunn Ticket Giveaway</b><small>win a pair for the Sept 17, 7pm show next door · drawn from the list</small></div>
           <div class="act"><button class="btn red to-signup" style="font-size:12px;padding:8px 14px">🎟 Enter</button></div>
         </div>
@@ -467,19 +509,19 @@
       <div class="grid3">
         <div class="blockcard" data-tier="well">
           <span class="ttag t-well">Well</span>
-          <div class="photoframe" style="height:140px"><img src="prepared-photos/people/tommy-and-theo-poster-wall-card-600x450.png" alt="Theo Von at the Whiskey Red record wall"></div>
+          <div class="ph" style="height:120px">[ PHOTO ]<br>famous face on a barstool,<br>nobody making a fuss</div>
           <h3>Spotted at the Red</h3>
           <p>Huntington Center's right next door, so a big name wanders in now and then. Yep — that's Theo Von on a barstool.</p>
         </div>
         <div class="blockcard" data-tier="well">
           <span class="ttag t-well">Well</span>
-          <div class="photoframe" style="height:140px"><img src="prepared-photos/food-drink/pizza-wings-on-bar-card-600x450.png" alt="Pizza and wings on the bar top"></div>
+          <div class="ph" style="height:120px">[ PHOTO ]<br>fresh pizza + wings<br>hitting the bar top</div>
           <h3>The Eats</h3>
           <p>Wings and pizza till 10pm — enough to keep you here for one more round.</p>
         </div>
         <div class="blockcard" data-tier="well">
           <span class="ttag t-well">Well</span>
-          <div class="ph" style="height:140px">[ PHOTO — PLACEHOLDER ]<br>game room — better shot needed</div>
+          <div class="ph" style="height:120px">[ PHOTO ]<br>back room going, pool<br>table mid-break</div>
           <h3>Game Room</h3>
           <p>Pool tables, dart boards, and a pinball lineup in the back. Quarters not included.</p>
         </div>
@@ -494,11 +536,11 @@
       <div class="hr" style="margin-bottom:22px"></div>
       <div class="gallery" data-tier="call" style="padding-top:6px">
         <span class="ttag t-call" style="top:-4px">Call · fresh weekly</span>
-        <div class="gcell wide tall"><img class="gphoto" src="prepared-photos/atmosphere/busy-bar-daylight-counter-square-900x900.png" alt="Busy afternoon crowd along the bar"><div class="gcap">Afternoon at the bar</div></div>
-        <div class="gcell"><img class="gphoto" src="prepared-photos/people/friends-taking-shots-at-bar-card-600x450.png" alt="Friends taking shots at the bar"><div class="gcap">Round of shots up front</div></div>
-        <div class="gcell"><img class="gphoto" src="prepared-photos/people/cowgirl-group-outside-505-card-600x450.png" alt="Group in boots outside 505 Jefferson"><div class="gcap">Boots out front on 505</div></div>
-        <div class="gcell"><img class="gphoto" src="prepared-photos/people/two-women-bar-dance-moment-card-600x450.png" alt="Two friends dancing at the bar"><div class="gcap">Out on the floor</div></div>
-        <div class="gcell"><img class="gphoto" src="prepared-photos/people/ticket-winners/ticket-winner-holding-tickets-card-600x450.png" alt="A giveaway winner with concert tickets in hand"><div class="gcap">Tickets in hand</div></div>
+        <div class="gcell wide tall"><div class="ph">[ PHOTO ]</div><div class="gcap">Friday night, shoulder to shoulder</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Boots packed on the floor</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Round of shots, whole crew in</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Patio full, doors thrown open</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Last call and nobody's leaving</div></div>
       </div>
       <p class="note call" style="margin-top:16px">↑ this gallery is the heart of "proof of life" — but a photo of last month's crowd is stale. fresh drops = Call tier.</p>
     </section>
@@ -511,15 +553,15 @@
         <div>
           <p class="kicker">// don't miss the next one</p>
           <h2>Get On The List</h2>
-          <p>First dibs on ticket giveaways — Brooks &amp; Dunn and every act next door — plus the can't-miss nights before anyone else.</p>
+          <p>Ticket giveaways for every country act next door, plus select Friday Mud Hens and Walleye games. Next up — Brooks &amp; Dunn.</p>
           <div class="formrow">
             <input type="email" placeholder="you@email.com" aria-label="email">
             <button class="btn red">Count Me In</button>
           </div>
-          <p class="fine">No spam, just good times — we promise not to drown your inbox.</p>
+          <p class="fine">We don't email much — only when there's a giveaway or a night you'd hate to miss.</p>
           <p class="note" style="margin-top:14px">this box is the whole Top-Shelf upsell — owns the list, runs the giveaways, fills slow nights with a blast</p>
         </div>
-        <div class="ticketph photoframe"><img src="prepared-photos/people/ticket-winners/ticket-winner-with-dj-lights-square-900x900.png" alt="Ticket giveaway winners under the DJ lights"></div>
+        <div class="ph ticketph">[ PHOTO ]<br>winner under the DJ lights,<br>tickets held overhead</div>
       </div>
     </section>
 
@@ -541,7 +583,7 @@
           <tr><td>Mon–Sat</td><td>Noon – 2am</td></tr>
           <tr><td>Sun</td><td>12:30pm – 2am</td></tr>
         </table>
-        <p style="margin-top:10px">Open Thanksgiving, Christmas &amp; Easter — somebody's gotta pour.</p>
+        <p style="margin-top:10px">Open Easter, Thanksgiving &amp; Christmas</p>
       </div>
       <div>
         <h4>Find Us</h4>
@@ -557,8 +599,58 @@
   <button class="btn red to-signup" style="width:100%;justify-content:center">🎟 Join the List — Win Tickets</button>
 </div>
 
+<div class="wfnote">LOW-FIDELITY WIREFRAME · grey boxes = photo placeholders (owner's FB dump drops in here) · copy + dates are stand-ins for layout only</div>
+
+<button class="demo-toggle" id="demoToggle"><span class="dotg"></span>Hide tier demo</button>
+
 <script>
 (function(){
+  var TI = {well:{r:1,name:'WELL'}, call:{r:2,name:'CALL'}, top:{r:3,name:'TOP SHELF'}};
+  var RANK = {well:1, call:2, top:3};
+  var NEXT = {2:'CALL tier', 3:'TOP SHELF tier'};
+  var body = document.body;
+
+  var SUMMARY = {
+    all:  ['MAP','Every block is tagged by the tier that keeps it alive. Flip a tier to preview the <b>actual site that client gets</b> — watch shelf-life content switch off.'],
+    well: ['WELL','<b>Basic / evergreen build.</b> 2 of 4 hero slides, recurring events only, the amenities & hours. No dated events, no fresh photos, no giveaways, no email list. Set it and forget it.'],
+    call: ['CALL','<b>Plus / weekly-fresh.</b> Every hero slide, the full live calendar, fresh photo drops in the gallery. We update it for you each week. RSVPs show but stay locked — capture is still Top Shelf.'],
+    top:  ['TOP SHELF','<b>Premium / the works.</b> Everything in Call <b>plus the email list</b> — the ticket giveaways <b>and every RSVP</b> feed it. Captures, blasts, and the slow-night filler that grows the crowd.']
+  };
+
+  // -------- apply a tier mode --------
+  function apply(mode){
+    if(mode === 'all'){
+      body.classList.add('mode-map');
+      document.querySelectorAll('[data-tier]').forEach(function(el){ el.classList.remove('excluded'); });
+    } else {
+      body.classList.remove('mode-map');
+      var r = RANK[mode];
+      document.querySelectorAll('[data-tier]').forEach(function(el){
+        var er = TI[el.dataset.tier].r;
+        if(er > r){
+          el.classList.add('excluded');
+          el.setAttribute('data-req','Needs ' + NEXT[er]);
+        } else {
+          el.classList.remove('excluded');
+        }
+      });
+    }
+    // summary
+    var s = SUMMARY[mode];
+    document.getElementById('summary').innerHTML =
+      '<span class="ico">'+s[0]+'</span><span>'+s[1]+'</span>';
+    // buttons
+    document.querySelectorAll('#switch button').forEach(function(b){
+      b.classList.toggle('active', b.dataset.m === mode);
+    });
+    updateDots();
+    syncDemoPad();
+  }
+
+  document.querySelectorAll('#switch button').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.dataset.m); });
+  });
+
   // -------- carousel --------
   var track = document.getElementById('track');
   var slides = Array.prototype.slice.call(track.querySelectorAll('[data-slide]'));
@@ -572,13 +664,25 @@
     d.addEventListener('click', function(){ go(i); });
     dotsWrap.appendChild(d);
   });
+  var cnt = document.createElement('span');
+  cnt.className = 'cnt';
+  dotsWrap.appendChild(cnt);
+
   function go(i){
     idx = (i + slides.length) % slides.length;
     track.style.transform = 'translateX(' + (-idx*100) + '%)';
     updateDots();
   }
   function updateDots(){
-    dotsWrap.querySelectorAll('.d').forEach(function(d,i){ d.classList.toggle('on', i===idx); });
+    var ds = dotsWrap.querySelectorAll('.d');
+    ds.forEach(function(d,i){ d.classList.toggle('on', i===idx); });
+    // count available slides in current tier
+    var avail = slides.filter(function(s){ return !s.classList.contains('excluded'); }).length;
+    if(body.classList.contains('mode-map')){
+      cnt.textContent = slides.length + ' slides · all tiers';
+    } else {
+      cnt.textContent = avail + ' of ' + slides.length + ' slides at this tier';
+    }
   }
   document.getElementById('next').addEventListener('click', function(){ go(idx+1); });
   document.getElementById('prev').addEventListener('click', function(){ go(idx-1); });
@@ -600,13 +704,19 @@
   document.querySelectorAll('.to-signup').forEach(function(btn){
     btn.addEventListener('click', function(e){
       e.preventDefault();
-      var targetY = signup.getBoundingClientRect().top + window.pageYOffset - 16;
+      var targetY = signup.getBoundingClientRect().top + window.pageYOffset - (demobar.offsetHeight + 14);
       signup.classList.remove('flash');
       void signup.offsetWidth; // reflow to restart animation
       tweenTo(targetY, function(){ signup.classList.add('flash'); });
     });
   });
   signup.addEventListener('animationend', function(){ signup.classList.remove('flash'); });
+
+  // -------- keep content clear of the fixed demo bar at any width --------
+  var demobar = document.querySelector('.demobar');
+  function syncDemoPad(){ body.style.paddingTop = demobar.offsetHeight + 'px'; }
+  window.addEventListener('resize', syncDemoPad);
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(syncDemoPad); }
 
   // -------- mobile nav drawer --------
   var header = document.querySelector('.siteheader');
@@ -623,6 +733,25 @@
       menuToggle.setAttribute('aria-expanded','false');
     });
   });
+
+  // -------- toggle the agency demo bar (preview the clean customer site) --------
+  var demoToggle = document.getElementById('demoToggle');
+  var demoOn = true;
+  demoToggle.addEventListener('click', function(){
+    demoOn = !demoOn;
+    body.classList.toggle('demo-off', !demoOn);
+    if(demoOn){
+      demoToggle.innerHTML = '<span class="dotg"></span>Hide tier demo';
+      apply('all');           // back to the annotated map view
+    } else {
+      demoToggle.innerHTML = '<span class="dotg off"></span>Show tier demo';
+      apply('top');           // clean full site — no tags, no stamps
+    }
+  });
+
+  // init
+  apply('all');
+  syncDemoPad();
 })();
 </script>
 </body>
