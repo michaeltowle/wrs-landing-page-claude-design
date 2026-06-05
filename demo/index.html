@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whiskey Red Saloon — Landing Wireframe</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Caveat:wght@500;700&family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f3efe6;
+    --paper2:#ece6d8;
+    --ink:#1d1b18;
+    --ink2:#56504593;
+    --ink2-solid:#5a544a;
+    --line:#c9c1b0;
+    --well:#5b6b7a;   /* evergreen  */
+    --call:#b27d27;   /* weekly     */
+    --top:#9e2b25;    /* email/premium */
+    --demo:#171513;
+    --demo2:#211e1a;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:#0e0d0c;
+    color:var(--ink);
+    font-family:'Oswald',sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding-top:96px;
+  }
+
+  /* ---------------- AGENCY DEMO BAR (the tool, not the site) ---------------- */
+  .demobar{
+    position:fixed; top:0; left:0; right:0; z-index:200;
+    background:linear-gradient(180deg,var(--demo2),var(--demo));
+    color:#efe9dc; border-bottom:2px solid #000;
+    font-family:'Courier Prime',monospace;
+    box-shadow:0 6px 18px rgba(0,0,0,.4);
+  }
+  .demobar .row1{display:flex;align-items:center;gap:18px;padding:9px 20px 7px;flex-wrap:wrap;}
+  .demobar .brandtag{display:flex;flex-direction:column;line-height:1.1;}
+  .demobar .brandtag b{font-family:'Oswald';font-weight:700;letter-spacing:.06em;font-size:14px;color:#fff;white-space:nowrap;}
+  .demobar .brandtag small{font-size:10px;color:#9a907e;letter-spacing:.04em;}
+  .demobar .lab{font-size:11px;color:#9a907e;letter-spacing:.08em;text-transform:uppercase;margin-left:auto;}
+  .switch{display:flex;gap:6px;background:#000;padding:4px;border-radius:8px;border:1px solid #2e2a25;}
+  .switch button{
+    font-family:'Oswald';font-weight:600;font-size:12.5px;letter-spacing:.06em;
+    color:#cabfa9;background:transparent;border:0;cursor:pointer;
+    padding:7px 13px;border-radius:6px;text-transform:uppercase;transition:.15s;white-space:nowrap;
+  }
+  .switch button:hover{color:#fff;background:#211e1a;}
+  .switch button .dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px;background:#666;}
+  .switch button[data-m="well"] .dot{background:var(--well);}
+  .switch button[data-m="call"] .dot{background:var(--call);}
+  .switch button[data-m="top"] .dot{background:var(--top);}
+  .switch button[data-m="all"] .dot{background:linear-gradient(90deg,var(--well),var(--call),var(--top));}
+  .switch button.active{color:#fff;box-shadow:inset 0 0 0 1.5px currentColor;}
+  .switch button[data-m="well"].active{background:#23303a;color:#bcd2e2;}
+  .switch button[data-m="call"].active{background:#3a2c11;color:#f0cd8a;}
+  .switch button[data-m="top"].active{background:#3a1614;color:#f0a59f;}
+  .switch button[data-m="all"].active{background:#2a2620;color:#fff;}
+  .demobar .summary{
+    background:#000; border-top:1px solid #2a2620; padding:7px 20px; font-size:12px;
+    color:#b8ad97; letter-spacing:.02em; display:flex; gap:10px; align-items:center;
+  }
+  .demobar .summary .ico{font-family:'Oswald';font-weight:700;color:#fff;background:#2a2620;border-radius:4px;padding:1px 7px;font-size:11px;letter-spacing:.08em;}
+  .demobar .summary b{color:#efe9dc;}
+
+  /* ---------------- BROWSER FRAME ---------------- */
+  .browser{
+    max-width:1080px;margin:26px auto 60px;background:var(--paper);
+    border:2px solid #000;border-radius:10px;overflow:hidden;
+    box-shadow:0 30px 70px rgba(0,0,0,.55), 6px 6px 0 #000;
+  }
+  .chrome{display:flex;align-items:center;gap:7px;padding:9px 14px;background:#e2dccd;border-bottom:2px solid #000;}
+  .chrome .dot{width:11px;height:11px;border-radius:50%;border:1.5px solid #000;}
+  .chrome .dot.r{background:#d98b85;}.chrome .dot.y{background:#e3c879;}.chrome .dot.g{background:#a8c293;}
+  .chrome .url{flex:1;margin-left:8px;background:var(--paper);border:1.5px solid #000;border-radius:14px;padding:3px 12px;font-family:'Courier Prime';font-size:11px;color:#6a6253;}
+
+  /* paper texture */
+  .page{
+    background:
+      linear-gradient(var(--paper),var(--paper));
+    position:relative;
+  }
+  .page::before{
+    content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background-image:radial-gradient(rgba(120,110,90,.10) 1px,transparent 1.4px);
+    background-size:7px 7px;
+  }
+
+  /* ---------------- generic wireframe bits ---------------- */
+  .ph{
+    background:
+      repeating-linear-gradient(45deg,#ddd6c6 0 9px,#e6e0d1 9px 18px);
+    border:1.6px solid #b3ab98;color:#80785f;
+    display:flex;align-items:center;justify-content:center;text-align:center;
+    font-family:'Courier Prime';font-size:11.5px;letter-spacing:.04em;
+    padding:10px;border-radius:8px 5px 9px 6px;
+  }
+  .sketch{border:2px solid var(--ink);border-radius:12px 7px 14px 8px;background:var(--paper);}
+  section{position:relative;}
+  .sec-pad{padding:38px 40px;}
+  .kicker{font-family:'Courier Prime';font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink2-solid);margin:0 0 6px;}
+  h2.big{font-family:'Oswald';font-weight:700;font-size:30px;letter-spacing:.01em;margin:0 0 4px;text-transform:uppercase;}
+  .hr{height:0;border-top:2.5px solid var(--ink);width:100%;margin:0;}
+  .btn{
+    font-family:'Oswald';font-weight:600;font-size:14px;letter-spacing:.05em;text-transform:uppercase;
+    background:var(--ink);color:var(--paper);border:2px solid var(--ink);cursor:pointer;
+    padding:11px 20px;border-radius:9px 6px 10px 6px;display:inline-flex;align-items:center;gap:9px;transition:.15s;
+  }
+  .btn:hover{transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--ink);}
+  .btn.red{background:var(--top);border-color:var(--top);color:#fff;}
+  .btn.ghost{background:transparent;color:var(--ink);}
+
+  /* tier tagging */
+  [data-tier]{position:relative;}
+  .ttag{
+    display:none;position:absolute;top:-11px;right:12px;z-index:6;
+    font-family:'Oswald';font-weight:700;font-size:10.5px;letter-spacing:.1em;
+    color:#fff;padding:3px 9px;border-radius:5px;border:1.5px solid #000;
+    box-shadow:2px 2px 0 #000; text-transform:uppercase;white-space:nowrap;
+  }
+  .ttag.t-well{background:var(--well);}
+  .ttag.t-call{background:var(--call);}
+  .ttag.t-top{background:var(--top);}
+  .mode-map .ttag{display:inline-block;}
+  /* color hairline on top of tagged blocks in map mode */
+  .mode-map [data-tier].blockcard{box-shadow:inset 0 4px 0 var(--well);}
+  .mode-map [data-tier="call"].blockcard{box-shadow:inset 0 4px 0 var(--call);}
+  .mode-map [data-tier="top"].blockcard{box-shadow:inset 0 4px 0 var(--top);}
+
+  /* margin notes (handwritten) — map mode only */
+  .note{
+    display:none;font-family:'Caveat';font-weight:700;font-size:18px;color:var(--top);
+    line-height:1.05;transform:rotate(-2.5deg);
+  }
+  .mode-map .note{display:block;}
+  .note.well{color:var(--well);}.note.call{color:var(--call);}
+
+  /* excluded / stamped */
+  .excluded{position:relative;isolation:isolate;}
+  .excluded > *{opacity:.18;filter:grayscale(1);transition:.2s;}
+  .excluded::after{
+    content:attr(data-req);
+    position:absolute;inset:0;z-index:8;display:grid;place-content:center;text-align:center;
+    font-family:'Oswald';font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--top);
+  }
+  .excluded::before{
+    content:"";position:absolute;inset:8px;z-index:7;border:2.5px dashed #b0473f;border-radius:10px;
+    background:repeating-linear-gradient(45deg,rgba(158,43,37,.05) 0 12px,rgba(158,43,37,.11) 12px 24px);
+  }
+
+  /* ---------------- HEADER ---------------- */
+  .siteheader{display:flex;align-items:center;gap:22px;padding:16px 40px;border-bottom:2.5px solid var(--ink);background:var(--paper2);}
+  .logo{display:flex;align-items:center;gap:12px;}
+  .logo .mark{width:46px;height:46px;border:2.5px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-family:'Oswald';font-weight:700;font-size:18px;background:var(--top);color:#fff;transform:rotate(-4deg);}
+  .logo b{font-family:'Oswald';font-weight:700;font-size:20px;letter-spacing:.03em;line-height:.95;text-transform:uppercase;}
+  .logo small{font-family:'Courier Prime';font-size:9.5px;letter-spacing:.18em;color:var(--ink2-solid);}
+  .nav{display:flex;gap:22px;margin-left:12px;}
+  .nav a{font-family:'Oswald';font-weight:500;font-size:14px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink);text-decoration:none;border-bottom:2px solid transparent;padding-bottom:2px;white-space:nowrap;}
+  .siteheader .btn{white-space:nowrap;}
+  .nav a:hover{border-color:var(--top);}
+  .siteheader .right{margin-left:auto;display:flex;align-items:center;gap:14px;}
+
+  /* ---------------- HERO CAROUSEL ---------------- */
+  .hero{background:var(--paper);border-bottom:2.5px solid var(--ink);overflow:hidden;}
+  .carousel{position:relative;}
+  .track{display:flex;transition:transform .4s cubic-bezier(.4,0,.2,1);}
+  .slide{min-width:100%;padding:30px 40px 26px;display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;}
+  .slide .ph.shot{min-height:240px;}
+  .slide .skick{font-family:'Courier Prime';font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink2-solid);margin-bottom:8px;}
+  .slide h1{font-family:'Oswald';font-weight:700;font-size:42px;line-height:.98;letter-spacing:.01em;text-transform:uppercase;margin:0 0 12px;text-wrap:balance;}
+  .slide p.sub{font-size:17px;line-height:1.35;color:#3a352d;margin:0 0 18px;max-width:34ch;}
+  .slide .meta{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px;}
+  .chip{font-family:'Courier Prime';font-size:11px;border:1.5px solid var(--ink);border-radius:20px;padding:3px 11px;background:var(--paper);}
+  .carbtns{position:absolute;top:50%;transform:translateY(-50%);width:100%;display:flex;justify-content:space-between;padding:0 8px;pointer-events:none;}
+  .carbtns button{pointer-events:all;width:40px;height:40px;border-radius:50%;border:2px solid var(--ink);background:var(--paper);font-size:18px;cursor:pointer;font-family:'Oswald';box-shadow:2px 2px 0 var(--ink);}
+  .carbtns button:hover{background:var(--ink);color:var(--paper);}
+  .dots{display:flex;gap:9px;justify-content:center;padding:4px 0 18px;align-items:center;}
+  .dots .d{width:11px;height:11px;border-radius:50%;border:1.8px solid var(--ink);background:transparent;cursor:pointer;}
+  .dots .d.on{background:var(--ink);}
+  .dots .cnt{font-family:'Courier Prime';font-size:11px;color:var(--ink2-solid);margin-left:10px;}
+
+  /* ---------------- CALENDAR ---------------- */
+  .calwrap{display:grid;gap:11px;}
+  .crow{display:grid;grid-template-columns:120px 1fr auto;gap:18px;align-items:center;background:var(--paper);border:2px solid var(--ink);border-radius:11px 7px 12px 7px;padding:14px 18px;}
+  .crow .when{font-family:'Oswald';font-weight:700;font-size:15px;line-height:1;text-transform:uppercase;}
+  .crow .when span{display:block;font-family:'Courier Prime';font-weight:400;font-size:11px;color:var(--ink2-solid);margin-top:3px;letter-spacing:.03em;}
+  .crow .what b{font-family:'Oswald';font-weight:600;font-size:17px;display:block;}
+  .crow .what small{font-family:'Courier Prime';font-size:11.5px;color:#4a4439;}
+  .crow .act{justify-self:end;}
+
+  /* ---------------- AMENITIES + GALLERY ---------------- */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
+  .blockcard{background:var(--paper);border:2px solid var(--ink);border-radius:12px 7px 13px 8px;padding:16px;}
+  .blockcard h3{font-family:'Oswald';font-weight:700;font-size:18px;text-transform:uppercase;margin:12px 0 5px;}
+  .blockcard p{font-family:'Courier Prime';font-size:12px;color:#4a4439;line-height:1.45;margin:0;}
+  .gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:128px;gap:14px;}
+  .gcell{position:relative;}
+  .gcell.tall{grid-row:span 2;}
+  .gcell.wide{grid-column:span 2;}
+  .gcell .ph{position:absolute;inset:0;}
+  .gcap{position:absolute;left:8px;bottom:8px;z-index:3;background:var(--ink);color:var(--paper);font-family:'Courier Prime';font-size:10.5px;padding:3px 8px;border-radius:5px;max-width:88%;}
+
+  /* ---------------- EMAIL SIGNUP ---------------- */
+  #signup{background:var(--paper2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);scroll-margin-top:120px;}
+  .signupbox{display:grid;grid-template-columns:1.1fr .9fr;gap:34px;align-items:center;}
+  .signupbox h2{font-family:'Oswald';font-weight:700;font-size:38px;line-height:.96;text-transform:uppercase;margin:0 0 10px;}
+  .signupbox p{font-size:16px;color:#3a352d;max-width:38ch;margin:0 0 8px;}
+  .signupbox .formrow{display:flex;gap:10px;margin-top:14px;}
+  .signupbox input{flex:1;font-family:'Courier Prime';font-size:14px;padding:13px 16px;border:2.5px solid var(--ink);border-radius:9px 6px 10px 6px;background:var(--paper);}
+  .signupbox .fine{font-family:'Courier Prime';font-size:11px;color:var(--ink2-solid);margin-top:10px;}
+  .ticketph{min-height:170px;}
+  /* flash effect */
+  @keyframes flashpulse{
+    0%,100%{box-shadow:inset 0 0 0 0 rgba(158,43,37,0);}
+    20%{box-shadow:inset 0 0 0 6px rgba(158,43,37,.55);}
+    50%{box-shadow:inset 0 0 0 6px rgba(158,43,37,.18);}
+    70%{box-shadow:inset 0 0 0 6px rgba(158,43,37,.55);}
+  }
+  #signup.flash{animation:flashpulse 1.8s ease 2;}
+  .flagdown{
+    position:absolute;left:50%;top:-2px;transform:translateX(-50%) translateY(-100%);
+    font-family:'Caveat';font-weight:700;font-size:26px;color:var(--top);opacity:0;pointer-events:none;
+    transition:.3s;white-space:nowrap;text-align:center;
+  }
+  #signup.flash .flagdown{opacity:1;transform:translateX(-50%) translateY(-100%) translateY(-6px);}
+
+  /* ---------------- FOOTER ---------------- */
+  .foot{background:var(--demo);color:#e7e0d2;padding:34px 40px;display:grid;grid-template-columns:1.1fr 1fr 1.2fr;gap:30px;}
+  .foot h4{font-family:'Oswald';font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:#cabfa9;margin:0 0 12px;border-bottom:1px solid #3a342c;padding-bottom:7px;}
+  .foot .logo b{color:#fff;}.foot .logo small{color:#9a907e;}
+  .foot p,.foot td{font-family:'Courier Prime';font-size:12.5px;color:#bdb39e;line-height:1.6;margin:4px 0;}
+  .foot table{width:100%;border-collapse:collapse;}
+  .foot td:last-child{text-align:right;color:#e7e0d2;}
+  .foot .mapph{min-height:120px;background:repeating-linear-gradient(45deg,#2a2620 0 9px,#211e1a 9px 18px);border:1.6px solid #3a342c;color:#8a8170;}
+  .foot .soc{display:flex;gap:9px;margin-top:8px;}
+  .foot .soc span{width:30px;height:30px;border:1.5px solid #4a443a;border-radius:7px;display:grid;place-items:center;font-family:'Courier Prime';font-size:11px;color:#bdb39e;}
+
+  /* low-fi disclaimer footer note */
+  .wfnote{background:#0e0d0c;color:#6a6253;font-family:'Courier Prime';font-size:11px;text-align:center;padding:14px;letter-spacing:.04em;}
+
+  /* temporary toggle to hide the agency demo bar & preview the clean site */
+  .demo-toggle{
+    position:fixed;left:12px;bottom:12px;z-index:300;font-family:'Courier Prime',monospace;
+    font-size:11px;letter-spacing:.04em;background:#171513;color:#cabfa9;border:1.5px solid #3a342c;
+    border-radius:7px;padding:8px 12px;cursor:pointer;box-shadow:0 6px 18px rgba(0,0,0,.45);
+    display:flex;align-items:center;gap:7px;
+  }
+  .demo-toggle:hover{color:#fff;}
+  .demo-toggle .dotg{width:8px;height:8px;border-radius:50%;background:#6f9e57;flex-shrink:0;}
+  .demo-toggle .dotg.off{background:#6a6253;}
+  body.demo-off .demobar{display:none !important;}
+
+  /* mobile-only chrome (variant D header + sticky CTA) — hidden on desktop */
+  .menu-toggle{display:none;}
+  .mobile-cta{display:none;}
+
+  @media(max-width:780px){
+    /* ---- outer gutter + tighter padding ---- */
+    .browser{margin:14px 9px 30px;box-shadow:0 14px 30px rgba(0,0,0,.5), 4px 4px 0 #000;}
+    .sec-pad{padding:24px 18px;}
+
+    /* ---- demo bar: compact so it doesn't eat the screen ---- */
+    .demobar .row1{padding:7px 13px 5px;gap:9px;}
+    .demobar .brandtag small{display:none;}
+    .demobar .lab{display:none;}
+    .switch{flex-wrap:wrap;gap:5px;padding:3px;}
+    .switch button{padding:6px 9px;font-size:11px;}
+    .demobar .summary{padding:6px 13px;font-size:11px;line-height:1.35;}
+
+    /* ---- layout reflow ---- */
+    .slide{grid-template-columns:1fr;padding:20px 18px 16px;}
+    .slide h1{font-size:32px;}
+    .slide .ph.shot{min-height:170px;}
+    .signupbox,.foot{grid-template-columns:1fr;}
+    .signupbox h2{font-size:30px;}
+    .foot{padding:26px 18px;}
+    .grid3{grid-template-columns:1fr;}
+    .gallery{grid-template-columns:repeat(2,1fr);}
+    .crow{grid-template-columns:78px 1fr;padding:12px 14px;}
+    .crow .act{grid-column:1/-1;justify-self:start;margin-top:4px;}
+
+    /* ---- header becomes variant D: minimal top + drawer ---- */
+    .siteheader{flex-wrap:wrap;gap:10px;padding:12px 18px;}
+    .siteheader .note{display:none !important;}
+    .logo b{font-size:18px;}
+    .desk-cta{display:none;}
+    .right{margin-left:auto;}
+    .menu-toggle{
+      display:inline-flex;align-items:center;font-family:'Oswald';font-weight:600;font-size:13px;
+      letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:transparent;
+      border:2px solid var(--ink);border-radius:9px 6px 10px 6px;padding:9px 16px;cursor:pointer;
+    }
+    .nav{
+      order:5;flex-basis:100%;width:100%;margin:0 -18px;padding:0 18px;
+      flex-direction:column;gap:0;max-height:0;overflow:hidden;
+      background:var(--ink);transition:max-height .28s ease;
+    }
+    .siteheader.open .nav{max-height:320px;padding:4px 18px 12px;}
+    .nav a{color:#efe9dc;font-size:17px;padding:12px 2px;border-bottom:1px solid #34302a;}
+    .nav a:hover{border-color:#34302a;}
+
+    /* ---- sticky bottom CTA bar ---- */
+    .mobile-cta{
+      display:block;position:fixed;left:0;right:0;bottom:0;z-index:150;
+      background:var(--paper2);border-top:2.5px solid var(--ink);padding:9px 14px;
+      box-shadow:0 -6px 18px rgba(0,0,0,.2);
+    }
+    .mobile-cta .ttag{top:-10px;right:14px;}
+    body{padding-bottom:72px;}
+  }
+</style>
+</head>
+<body>
+
+<!-- ============= AGENCY DEMO BAR ============= -->
+<div class="demobar">
+  <div class="row1">
+    <div class="brandtag">
+      <b>WHISKEY RED · LANDING PAGE</b>
+      <small>wireframe preview · service-tier demo</small>
+    </div>
+    <div class="switch" id="switch">
+      <button data-m="all" class="active"><span class="dot"></span>Map view</button>
+      <button data-m="well"><span class="dot"></span>Well</button>
+      <button data-m="call"><span class="dot"></span>Call</button>
+      <button data-m="top"><span class="dot"></span>Top Shelf</button>
+    </div>
+    <div class="lab">Well = Basic · Call = Plus · Top Shelf = Premium</div>
+  </div>
+  <div class="summary" id="summary">
+    <span class="ico">MAP</span>
+    <span>Every block is tagged by the tier that keeps it alive. Flip a tier to preview the <b>actual site that client gets</b> — watch shelf-life content switch off.</span>
+  </div>
+</div>
+
+<div class="page">
+
+    <!-- ===== HEADER (evergreen) ===== -->
+    <header class="siteheader" data-tier="well">
+      <span class="ttag t-well">Well</span>
+      <div class="logo">
+        <div class="mark">WR</div>
+        <div><b>Whiskey Red<br>Saloon</b><br><small>TOLEDO, OHIO</small></div>
+      </div>
+      <nav class="nav" id="siteNav">
+        <a href="#cal">Events</a>
+        <a href="#spot">The Spot</a>
+        <a href="#lately">Lately</a>
+        <a href="#findus">Find Us</a>
+      </nav>
+      <div class="right">
+        <span class="note">↓ this button is Top&nbsp;Shelf</span>
+        <button class="btn red to-signup desk-cta" data-tier="top"><span class="ttag t-top">Top</span>🎟 Join the List</button>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">Menu</button>
+      </div>
+    </header>
+
+    <!-- ===== HERO CAROUSEL ===== -->
+    <section class="hero">
+      <div class="carousel">
+        <div class="track" id="track">
+
+          <!-- Slide 1 — evergreen brand -->
+          <div class="slide" data-tier="well" data-slide>
+            <span class="ttag t-well">Well</span>
+            <div>
+              <div class="skick">Toledo's blue-collar saloon</div>
+              <h1>Cold Beer.<br>Loud Nights.<br>Good People.</h1>
+              <p class="sub">A working man's bar next door to the Huntington Center. Pull up a stool.</p>
+              <div class="meta"><span class="chip">Open till 2am daily</span><span class="chip">Happy Hour weekdays till 6pm</span></div>
+              <button class="btn ghost">See What's On →</button>
+            </div>
+            <div class="ph shot">[ HERO PHOTO ]<br>exterior + painted-window lettering<br>— evergreen, never changes —</div>
+          </div>
+
+          <!-- Slide 2 — Jeep Fest (dated) -->
+          <div class="slide" data-tier="call" data-slide>
+            <span class="ttag t-call">Call</span>
+            <div>
+              <div class="skick">Aug 6–9 · Toledo Jeep Fest</div>
+              <h1>Jeep Fest<br>Weekend</h1>
+              <p class="sub">Toledo's biggest weekend. Doors at 9am — park the Jeep, pop the doors, pile in. Jeep owners get <b>25% off</b> drinks, pizza &amp; wings all four days.</p>
+              <div class="meta"><span class="chip">Doors 9am</span><span class="chip">Jeep owners 25% off</span><span class="chip">Live DJ</span></div>
+              <button class="btn">Weekend Lineup →</button>
+              <div class="note call" style="margin-top:14px">shelf life: gone after Aug 9 — needs a swap</div>
+            </div>
+            <div class="ph shot">[ HERO PHOTO ]<br>Jeeps lined up out front,<br>packed patio crowd</div>
+          </div>
+
+          <!-- Slide 3 — Brooks & Dunn giveaway (email/top) -->
+          <div class="slide" data-tier="top" data-slide>
+            <span class="ttag t-top">Top</span>
+            <div>
+              <div class="skick">Sept 17 · Huntington Center</div>
+              <h1>Win Brooks<br>&amp; Dunn Tickets</h1>
+              <p class="sub">Free to enter — get on the list and we'll draw a winner. Plus first dibs on every show next door.</p>
+              <div class="meta"><span class="chip">Free entry</span><span class="chip">Pair of tickets</span></div>
+              <button class="btn red to-signup">Enter to Win →</button>
+              <div class="note" style="margin-top:14px">giveaway = email captures = Top&nbsp;Shelf</div>
+            </div>
+            <div class="ph shot">[ HERO PHOTO ]<br>concert / tickets graphic<br>"ENTER TO WIN"</div>
+          </div>
+
+          <!-- Slide 4 — Line Dancing (recurring/evergreen) -->
+          <div class="slide" data-tier="well" data-slide>
+            <span class="ttag t-well">Well</span>
+            <div>
+              <div class="skick">Every Wednesday</div>
+              <h1>Line Dancing<br>Wednesdays</h1>
+              <p class="sub">With <b>Lined Up</b>. Boots not required, attitude optional. All levels welcome.</p>
+              <div class="meta"><span class="chip">7–11 PM</span><span class="chip">$5 cover</span><span class="chip">All levels</span><span class="chip">18+</span></div>
+              <button class="btn ghost">How It Works →</button>
+            </div>
+            <div class="ph shot">[ HERO PHOTO ]<br>full dance floor, boots,<br>"Lined Up" instructor up front</div>
+          </div>
+
+        </div>
+        <div class="carbtns"><button id="prev">‹</button><button id="next">›</button></div>
+      </div>
+      <div class="dots" id="dots"></div>
+    </section>
+
+    <!-- ===== EVENT CALENDAR ===== -->
+    <section class="sec-pad" id="cal">
+      <p class="kicker">// what's coming up</p>
+      <h2 class="big">The Calendar</h2>
+      <div class="hr" style="margin-bottom:22px"></div>
+      <div class="calwrap">
+
+        <div class="crow" data-tier="well">
+          <span class="ttag t-well">Well</span>
+          <div class="when">Every<br>WED<span>recurring</span></div>
+          <div class="what"><b>Line Dancing w/ Lined Up</b><small>7–11pm · $5 cover · all levels · 18+</small></div>
+          <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">Details</button></div>
+        </div>
+
+        <div class="crow" data-tier="well">
+          <span class="ttag t-well">Well</span>
+          <div class="when">Every<br>FRI+SAT<span>recurring</span></div>
+          <div class="what"><b>DJ Spins Late</b><small>9pm–1am · no cover · 21+</small></div>
+          <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">Details</button></div>
+        </div>
+
+        <div class="crow" data-tier="call">
+          <span class="ttag t-call">Call</span>
+          <div class="when">SUN<br>Jun 14<span>this week</span></div>
+          <div class="what"><b>Mud Hens Afterparty</b><small>doors 7pm · $3 drafts · jerseys welcome</small></div>
+          <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">RSVP</button></div>
+        </div>
+
+        <div class="crow" data-tier="call">
+          <span class="ttag t-call">Call</span>
+          <div class="when">AUG<br>6–9<span>Jeep Fest</span></div>
+          <div class="what"><b>Toledo Jeep Fest Weekend</b><small>the city's biggest weekend · doors 9am daily · Jeep owners 25% off drinks, pizza &amp; wings</small></div>
+          <div class="act"><button class="btn ghost" style="font-size:12px;padding:8px 14px">Lineup</button></div>
+        </div>
+
+        <div class="crow" data-tier="top">
+          <span class="ttag t-top">Top</span>
+          <div class="when">SEP<br>16<span>giveaway</span></div>
+          <div class="what"><b>Brooks &amp; Dunn Ticket Giveaway</b><small>win a pair for the Sept 17, 7pm show next door · drawn from the list</small></div>
+          <div class="act"><button class="btn red to-signup" style="font-size:12px;padding:8px 14px">🎟 Enter</button></div>
+        </div>
+
+      </div>
+      <p class="note call" style="margin-top:16px">↑ at Well tier the calendar shrinks to the 2 recurring rows — everything dated needs a human updating it weekly</p>
+    </section>
+
+    <!-- ===== THE SPOT (evergreen amenities) ===== -->
+    <section class="sec-pad" id="spot" style="background:var(--paper2);border-top:2.5px solid var(--ink);border-bottom:2.5px solid var(--ink)">
+      <p class="kicker">// always here, always open</p>
+      <h2 class="big">The Spot</h2>
+      <div class="hr" style="margin-bottom:22px"></div>
+      <div class="grid3">
+        <div class="blockcard" data-tier="well">
+          <span class="ttag t-well">Well</span>
+          <div class="ph" style="height:120px">[ PHOTO ] Theo Von @ the bar</div>
+          <h3>Spotted at the Red</h3>
+          <p>Huntington Center's right next door, so a big name wanders in now and then. Yep — that's Theo Von on a barstool.</p>
+        </div>
+        <div class="blockcard" data-tier="well">
+          <span class="ttag t-well">Well</span>
+          <div class="ph" style="height:120px">[ PHOTO ] wings + pizza</div>
+          <h3>The Eats</h3>
+          <p>Wings and pizza till 10pm — enough to keep you here for one more round.</p>
+        </div>
+        <div class="blockcard" data-tier="well">
+          <span class="ttag t-well">Well</span>
+          <div class="ph" style="height:120px">[ PHOTO ] game room</div>
+          <h3>Game Room</h3>
+          <p>Pool tables, dart boards, and a pinball lineup in the back. Quarters not included.</p>
+        </div>
+      </div>
+      <p class="note" style="color:var(--well);margin-top:16px">these never expire → they live on the Well tier and carry the whole basic site</p>
+    </section>
+
+    <!-- ===== LATELY (proof of life gallery) ===== -->
+    <section class="sec-pad" id="lately">
+      <p class="kicker">// proof we're packed</p>
+      <h2 class="big">Lately at the Red</h2>
+      <div class="hr" style="margin-bottom:22px"></div>
+      <div class="gallery" data-tier="call" style="padding-top:6px">
+        <span class="ttag t-call" style="top:-4px">Call · fresh weekly</span>
+        <div class="gcell wide tall"><div class="ph">[ PHOTO ]</div><div class="gcap">Friday — shoulder-to-shoulder</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Line dancing, full floor</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Staff after close</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Mud Hens night</div></div>
+        <div class="gcell"><div class="ph">[ PHOTO ]</div><div class="gcap">Patio, doors open</div></div>
+      </div>
+      <p class="note call" style="margin-top:16px">↑ this gallery is the heart of "proof of life" — but a photo of last month's crowd is stale. fresh drops = Call tier.</p>
+    </section>
+
+    <!-- ===== EMAIL SIGNUP (top shelf) ===== -->
+    <section class="sec-pad" id="signup" data-tier="top">
+      <div class="flagdown">👇 right here — this is the Top Shelf piece 👇</div>
+      <span class="ttag t-top" style="top:6px">Top Shelf</span>
+      <div class="signupbox">
+        <div>
+          <p class="kicker">// don't miss the next one</p>
+          <h2>Get On The List</h2>
+          <p>First dibs on ticket giveaways — Brooks &amp; Dunn and every act next door — plus the can't-miss nights before anyone else.</p>
+          <div class="formrow">
+            <input type="email" placeholder="you@email.com" aria-label="email">
+            <button class="btn red">Count Me In</button>
+          </div>
+          <p class="fine">No spam, just good times — we promise not to drown your inbox.</p>
+          <p class="note" style="margin-top:14px">this box is the whole Top-Shelf upsell — owns the list, runs the giveaways, fills slow nights with a blast</p>
+        </div>
+        <div class="ph ticketph">[ GRAPHIC ]<br>ticket stub / "WIN A PAIR"<br>incentive to sign up</div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="foot" id="findus" data-tier="well">
+      <span class="ttag t-well" style="top:8px">Well</span>
+      <div>
+        <div class="logo" style="margin-bottom:12px">
+          <div class="mark">WR</div>
+          <div><b>Whiskey Red<br>Saloon</b><br><small>TOLEDO, OHIO</small></div>
+        </div>
+        <p>505 Jefferson Ave<br>Toledo, OH 43604<br>(next to the Huntington Center)</p>
+        <p>(419) 725-6127</p>
+        <div class="soc"><span>FB</span><span>IG</span></div>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <table>
+          <tr><td>Mon–Sat</td><td>Noon – 2am</td></tr>
+          <tr><td>Sun</td><td>12:30pm – 2am</td></tr>
+        </table>
+        <p style="margin-top:10px">Open Thanksgiving, Christmas &amp; Easter — somebody's gotta pour.</p>
+      </div>
+      <div>
+        <h4>Find Us</h4>
+        <div class="ph mapph">[ MAP EMBED ]<br>downtown Toledo · pin on 505 Jefferson</div>
+      </div>
+    </footer>
+
+  </div><!-- /page -->
+
+<!-- sticky bottom CTA — only shows at mobile widths (variant D) -->
+<div class="mobile-cta" data-tier="top">
+  <span class="ttag t-top">Top Shelf</span>
+  <button class="btn red to-signup" style="width:100%;justify-content:center">🎟 Join the List — Win Tickets</button>
+</div>
+
+<div class="wfnote">LOW-FIDELITY WIREFRAME · grey boxes = photo placeholders (owner's FB dump drops in here) · copy + dates are stand-ins for layout only</div>
+
+<button class="demo-toggle" id="demoToggle"><span class="dotg"></span>Hide tier demo</button>
+
+<script>
+(function(){
+  var TI = {well:{r:1,name:'WELL'}, call:{r:2,name:'CALL'}, top:{r:3,name:'TOP SHELF'}};
+  var RANK = {well:1, call:2, top:3};
+  var NEXT = {2:'CALL tier', 3:'TOP SHELF tier'};
+  var body = document.body;
+
+  var SUMMARY = {
+    all:  ['MAP','Every block is tagged by the tier that keeps it alive. Flip a tier to preview the <b>actual site that client gets</b> — watch shelf-life content switch off.'],
+    well: ['WELL','<b>Basic / evergreen build.</b> 2 of 4 hero slides, recurring events only, the amenities & hours. No dated events, no fresh photos, no giveaways, no email list. Set it and forget it.'],
+    call: ['CALL','<b>Plus / weekly-fresh.</b> Every hero slide, the full live calendar, fresh photo drops in the gallery. We update it for you each week. Still no email marketing.'],
+    top:  ['TOP SHELF','<b>Premium / the works.</b> Everything in Call <b>plus the ticket-giveaway email list</b> — captures, blasts, and the slow-night filler that grows the crowd.']
+  };
+
+  // -------- apply a tier mode --------
+  function apply(mode){
+    if(mode === 'all'){
+      body.classList.add('mode-map');
+      document.querySelectorAll('[data-tier]').forEach(function(el){ el.classList.remove('excluded'); });
+    } else {
+      body.classList.remove('mode-map');
+      var r = RANK[mode];
+      document.querySelectorAll('[data-tier]').forEach(function(el){
+        var er = TI[el.dataset.tier].r;
+        if(er > r){
+          el.classList.add('excluded');
+          el.setAttribute('data-req','Needs ' + NEXT[er]);
+        } else {
+          el.classList.remove('excluded');
+        }
+      });
+    }
+    // summary
+    var s = SUMMARY[mode];
+    document.getElementById('summary').innerHTML =
+      '<span class="ico">'+s[0]+'</span><span>'+s[1]+'</span>';
+    // buttons
+    document.querySelectorAll('#switch button').forEach(function(b){
+      b.classList.toggle('active', b.dataset.m === mode);
+    });
+    updateDots();
+    syncDemoPad();
+  }
+
+  document.querySelectorAll('#switch button').forEach(function(b){
+    b.addEventListener('click', function(){ apply(b.dataset.m); });
+  });
+
+  // -------- carousel --------
+  var track = document.getElementById('track');
+  var slides = Array.prototype.slice.call(track.querySelectorAll('[data-slide]'));
+  var idx = 0;
+  var dotsWrap = document.getElementById('dots');
+
+  // build dots
+  slides.forEach(function(_,i){
+    var d = document.createElement('button');
+    d.className = 'd' + (i===0?' on':'');
+    d.addEventListener('click', function(){ go(i); });
+    dotsWrap.appendChild(d);
+  });
+  var cnt = document.createElement('span');
+  cnt.className = 'cnt';
+  dotsWrap.appendChild(cnt);
+
+  function go(i){
+    idx = (i + slides.length) % slides.length;
+    track.style.transform = 'translateX(' + (-idx*100) + '%)';
+    updateDots();
+  }
+  function updateDots(){
+    var ds = dotsWrap.querySelectorAll('.d');
+    ds.forEach(function(d,i){ d.classList.toggle('on', i===idx); });
+    // count available slides in current tier
+    var avail = slides.filter(function(s){ return !s.classList.contains('excluded'); }).length;
+    if(body.classList.contains('mode-map')){
+      cnt.textContent = slides.length + ' slides · all tiers';
+    } else {
+      cnt.textContent = avail + ' of ' + slides.length + ' slides at this tier';
+    }
+  }
+  document.getElementById('next').addEventListener('click', function(){ go(idx+1); });
+  document.getElementById('prev').addEventListener('click', function(){ go(idx-1); });
+
+  // -------- auto-scroll CTAs + flash --------
+  var signup = document.getElementById('signup');
+  function tweenTo(targetY, done){
+    var startY = window.pageYOffset, dist = targetY - startY, dur = 620, t0 = null;
+    if(Math.abs(dist) < 2){ done(); return; }
+    function step(ts){
+      if(t0 === null) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var e = p < .5 ? 4*p*p*p : 1 - Math.pow(-2*p+2,3)/2; // easeInOutCubic
+      window.scrollTo(0, startY + dist*e);
+      if(p < 1) requestAnimationFrame(step); else done();
+    }
+    requestAnimationFrame(step);
+  }
+  document.querySelectorAll('.to-signup').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var targetY = signup.getBoundingClientRect().top + window.pageYOffset - (demobar.offsetHeight + 14);
+      signup.classList.remove('flash');
+      void signup.offsetWidth; // reflow to restart animation
+      tweenTo(targetY, function(){ signup.classList.add('flash'); });
+    });
+  });
+  signup.addEventListener('animationend', function(){ signup.classList.remove('flash'); });
+
+  // -------- keep content clear of the fixed demo bar at any width --------
+  var demobar = document.querySelector('.demobar');
+  function syncDemoPad(){ body.style.paddingTop = demobar.offsetHeight + 'px'; }
+  window.addEventListener('resize', syncDemoPad);
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(syncDemoPad); }
+
+  // -------- mobile nav drawer --------
+  var header = document.querySelector('.siteheader');
+  var menuToggle = document.getElementById('menuToggle');
+  menuToggle.addEventListener('click', function(){
+    var open = header.classList.toggle('open');
+    menuToggle.textContent = open ? 'Close' : 'Menu';
+    menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  document.querySelectorAll('#siteNav a').forEach(function(a){
+    a.addEventListener('click', function(){
+      header.classList.remove('open');
+      menuToggle.textContent = 'Menu';
+      menuToggle.setAttribute('aria-expanded','false');
+    });
+  });
+
+  // -------- toggle the agency demo bar (preview the clean customer site) --------
+  var demoToggle = document.getElementById('demoToggle');
+  var demoOn = true;
+  demoToggle.addEventListener('click', function(){
+    demoOn = !demoOn;
+    body.classList.toggle('demo-off', !demoOn);
+    if(demoOn){
+      demoToggle.innerHTML = '<span class="dotg"></span>Hide tier demo';
+      apply('all');           // back to the annotated map view
+    } else {
+      demoToggle.innerHTML = '<span class="dotg off"></span>Show tier demo';
+      apply('top');           // clean full site — no tags, no stamps
+    }
+  });
+
+  // init
+  apply('all');
+  syncDemoPad();
+})();
+</script>
+</body>
+</html>
